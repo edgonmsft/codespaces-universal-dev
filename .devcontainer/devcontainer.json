@@ -1,0 +1,29 @@
+{
+	"name": "Test Codespaces Universal Image",
+	"dockerFile": "Dockerfile",
+	
+	"runArgs": [
+		"--network", "host", "--privileged"
+	],
+	
+	"appPort": [8000, 8001],
+
+	"settings": { 
+		"workbench.colorTheme": "Monokai",
+		"remote.extensionKind": {
+    			"ms-azuretools.vscode-docker": [ "workspace" ],
+		},
+		"terminal.integrated.shell.linux": "/bin/bash"
+	},
+
+	"mounts": [
+		"source=/var/run/docker.sock,target=/var/run/docker.sock,type=bind"
+	],
+	
+	"extensions": [
+		"ms-vscode.csharp",
+		"minhthai.vscode-todo-parser",
+		"CoenraadS.bracket-pair-colorizer",
+		"ms-azuretools.vscode-docker"
+	]
+}
