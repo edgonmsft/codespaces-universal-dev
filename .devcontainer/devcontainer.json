@@ -1,6 +1,6 @@
 {
 	"name": "Test Codespaces Universal Image",
-	"dockerFile": "Dockerfile",
+	"image": "mcr.microsoft.com/vscode/devcontainers/universal:dev",
 	
 	"runArgs": [
 		"--network", "host", "--privileged"
